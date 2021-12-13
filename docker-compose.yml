@@ -1,0 +1,10 @@
+version: "3.10"
+services:
+  book:
+    image: "shotofw/jerrybook:1.2"
+    ports:
+      - "8001:8000"
+    environment:
+      - GITLAB_URL=https://gitlab.com/{token}/{Project}/{branch}/{application.ipynb}
+  
+    
